@@ -1,0 +1,12 @@
+State ID,State,Capital,Polulation,University Town,Business Center,Timezone
+NY,New York,Albany,150500,Y,N,ET
+NC,North Carolina,Raleigh,1000020,N,Y,ET
+OH,Ohio,Columbus,400000,N,Y,ET
+WI,Wisconsin,Madison,230000,Y,N,CT
+IN,Indian,Indianapolis,550000,N,Y,CT
+IA,Iowa,Des Moines,200000,N,Y,CT
+CO,Colorado,Denver,1500000,N,Y,MT
+UT,Utah,Salt Lake City,1200100,Y,Y,MT
+TX,Texas,Austin,1800500,Y,Y,MT
+CA,California,Sacramento,1705500,Y,N,PT
+WA,Washington,Seatle,2000000,Y,Y,PT
