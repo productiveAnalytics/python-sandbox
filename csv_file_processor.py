@@ -23,9 +23,10 @@ state_capitals = { 'NY' : ['New York', 'Albany', 150500, True, False, 'ET'],
 def create_new_or_open_existig_csv(filename: str) -> 'fhandle' :
     
     csv_abs_path = Path('./Data/'+filename)
-    print('CSV File = '+ str(csv_abs_path))
+    str_csv_path = str(csv_abs_path)
+    print('CSV File = '+ str_csv_path)
     if not csv_abs_path.exists() :
-        with open(csv_abs_path, 'w') as fhandle:
+        with open(str_csv_path, 'w') as fhandle:
         
             column_line = '' 
         
@@ -41,11 +42,11 @@ def create_new_or_open_existig_csv(filename: str) -> 'fhandle' :
                 #print('DEBUG--', column_line)
                 print(column_line, file = fhandle)
                 
-        print('>>>Created new CSV file {0}'.format(csv_abs_path))    
+        print('>>>Created new CSV file {0}'.format(str_csv_path))    
     else :
-        print('>>>Using existing CSV file: {0}'.format(csv_abs_path))
+        print('>>>Using existing CSV file: {0}'.format(str_csv_path))
         
-    fhandle = open(csv_abs_path, 'r')
+    fhandle = open(str_csv_path, 'r')
     return fhandle
 
 print()
