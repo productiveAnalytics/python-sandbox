@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<data>
+	<country name="Quatar">
+        <rank updated="yes">1</rank>
+        <year>2013</year>
+        <gdppc>145000</gdppc>
+        <neighbor name="Baharain" direction="N"/>
+		<neighbor name="Iran" direction="E"/>
+		<neighbor name="UAE" direction="S"/>
+        <neighbor name="Saudi" direction="S"/>
+    </country>
+    <country name="Liechtenstein">
+        <rank updated="no">2</rank>
+        <year>2008</year>
+        <gdppc>141100</gdppc>
+        <neighbor name="Austria" direction="E"/>
+        <neighbor name="Switzerland" direction="W"/>
+    </country>
+    <country name="Singapore">
+        <rank updated="yes">5</rank>
+        <year>2011</year>
+        <gdppc>59900</gdppc>
+        <neighbor name="Malaysia" direction="N"/>
+    </country>
+	<country name="Norway">
+        <rank updated="yes">10</rank>
+        <year>2013</year>
+        <gdppc>68000</gdppc>
+        <neighbor name="Sweden" direction="W"/>
+		<neighbor name="Finland" direction="S"/>
+    </country>
+	<country name="USA">
+        <rank updated="yes">10</rank>
+        <year>2015</year>
+        <gdppc>55000</gdppc>
+        <neighbor name="Canada" direction="N"/>
+		<neighbor name="Mexico" direction="S"/>
+    </country>
+    <country name="Panama">
+        <rank updated="yes">69</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor name="Costa Rica" direction="W"/>
+        <neighbor name="Colombia" direction="E"/>
+    </country>
+	<country name="India">
+        <rank updated="no">118</rank>
+        <year>2010</year>
+        <gdppc>6000</gdppc>
+        <neighbor name="Myanmar" direction="E"/>
+		<neighbor name="Bhutan" direction="E"/>
+        <neighbor name="Porkistan" direction="W"/>
+		<neighbor name="Sri Lanka" direction="S"/>
+		<neighbor name="Nepal" direction="N"/>
+		<neighbor name="Tibet" direction="N"/>
+    </country>
+</data>
