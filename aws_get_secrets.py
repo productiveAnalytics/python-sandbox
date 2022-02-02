@@ -58,15 +58,20 @@ def get_secret(secret_name:str, region_name:str='us-east-1') -> str :
         # Decrypts secret using the associated KMS CMK.
         # Depending on whether the secret is a string or binary, one of these fields will be populated.
         if 'SecretString' in get_secret_value_response:
+            print('Found unencoded secret')
             secret_text = get_secret_value_response['SecretString']
             return secret_text
         else:
+            print('Found base64 encoded secret')
             secret_decoded_binary = base64.b64decode(get_secret_value_response['SecretBinary'])
             return secret_decoded_binary
 
 
 if __name__ == '__main__':
-    my_secret_key:str = 'lineardp/dev/airflow/connections/oracle/edw'
+    # my_secret_key:str = 'lineardp/dev/airflow/connections/oracle/edw'
+
+    # ARN: arn:aws:secretsmanager:us-east-1:887847050650:secret:laap-sec-ue1-mstr-encryptorcl-sandbox-PLyntU
+    my_secret_key:str = 'laap-sec-ue1-mstr-encryptorcl-sandbox'
     my_secret_value:str = get_secret(secret_name=my_secret_key)
     print('Secret found: Key: {} = Value: {}'.format(my_secret_key, my_secret_value))
 
